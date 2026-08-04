@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ehtesam Awan — Creative Designer &amp; Educator</title>
+<meta name="description" content="Ehtesam Awan — Creative Designer, Educator &amp; Digital Problem Solver. Graphic design, content, and teaching, built to move people and hold their attention." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/png" href="fevicon.png">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Loading screen -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">EA</div>
+    <div class="loader-bar-track"><div class="loader-bar" id="loaderBar"></div></div>
+    <div class="loader-tag">roll call <span id="loaderPct">0</span>%</div>
+  </div>
+</div>
+
+<!-- Ambient background -->
+<canvas id="particles"></canvas>
+<div class="grain"></div>
+<div class="ledger-lines" aria-hidden="true"></div>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark">EA<span class="dot">.</span></a>
+  <nav class="nav-links">
+    <a href="#about"><span>01</span> About</a>
+    <a href="#work"><span>02</span> Work</a>
+    <a href="#services"><span>03</span> Services</a>
+    <a href="#journey"><span>04</span> Journey</a>
+    <a href="#contact"><span>05</span> Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Let's talk</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#work">Work</a>
+  <a href="#services">Services</a>
+  <a href="#journey">Journey</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal-up"><span class="eyebrow-dot"></span> Based in Pakistan — open to remote work</p>
+        <h1 class="hero-title">
+          <span class="line reveal-up">Creative Designer,</span>
+          <span class="line reveal-up">Educator &amp;</span>
+          <span class="line hero-typed-line reveal-up">
+            <span id="typedText"></span><span class="type-cursor" aria-hidden="true"></span>
+          </span>
+        </h1>
+        <p class="hero-desc reveal-up">
+          I transform ideas into impactful digital experiences through design, creativity,
+          technology, and communication — then teach others to do the same.
+        </p>
+        <div class="hero-ctas reveal-up">
+          <a href="#work" class="btn btn-primary"><span>View Work</span></a>
+          <a href="assets/Ehtesam-Awan-Resume.pdf" download class="btn btn-ghost"><span>Download Resume</span></a>
+          <a href="#contact" class="btn btn-text">Contact Me <i>→</i></a>
+        </div>
+
+        <div class="hero-stats reveal-up">
+          <div class="stat">
+            <span class="stat-num" data-count="2">0</span><span class="stat-suffix">+</span>
+            <p>Years Teaching</p>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="100">0</span><span class="stat-suffix">+</span>
+            <p>Creative Projects</p>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="50">0</span><span class="stat-suffix">+</span>
+            <p>Students Guided</p>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span>
+            <p>Remote Clients</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <div class="portrait-ring"></div>
+          <img src="portrait.jpeg" alt="Portrait of Ehtesam Awan" class="portrait-img" />
+          <div class="portrait-tag portrait-tag-1">
+            <span class="tag-label">status</span>
+            <span class="tag-value">Open to work</span>
+          </div>
+          <div class="portrait-tag portrait-tag-2">
+            <span class="tag-label">focus</span>
+            <span class="tag-value">Design · Code · Teach</span>
+          </div>
+        </div>
+        <div class="orbit-dot orbit-dot-1"></div>
+        <div class="orbit-dot orbit-dot-2"></div>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>scroll</span>
+      <div class="scroll-cue-line"><div class="scroll-cue-fill"></div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">01 / About</p>
+      <h2 class="section-title reveal-up">Two disciplines, one instinct for making things clearer.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal-up">
+        <p>
+          I started building technical and creative skills during my college years — not in a straight
+          line, but in the way most useful skills actually arrive: through teaching, graphic design,
+          content creation, and digital media, often at the same time.
+        </p>
+        <p>
+          Standing in front of a classroom taught me how to explain a hard idea simply. Designing for
+          real clients taught me how to make that idea look inevitable. Somewhere in between, I picked
+          up the habits that connect the two — clear communication, steady leadership, and a comfort
+          with problems that don't have an obvious first step.
+        </p>
+        <p>
+          I stayed active in university societies and academic circles, which is where the confidence
+          and public-speaking side of my work really took shape. What I bring to a project now is that
+          same combination: education, creativity, and technology, moving together instead of in
+          separate lanes.
+        </p>
+      </div>
+
+      <div class="about-cards">
+        <div class="glass-card about-card reveal-up">
+          <span class="about-card-icon">◐</span>
+          <h3>Teach</h3>
+          <p>Breaking technical subjects into steps a room full of first-timers can actually follow.</p>
+        </div>
+        <div class="glass-card about-card reveal-up">
+          <span class="about-card-icon">◇</span>
+          <h3>Design</h3>
+          <p>Turning a brand brief or a rough idea into something people stop scrolling for.</p>
+        </div>
+        <div class="glass-card about-card reveal-up">
+          <span class="about-card-icon">○</span>
+          <h3>Build</h3>
+          <p>Enough HTML, CSS, JavaScript and C++ to know how the things I design actually work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">02 / Education</p>
+      <h2 class="section-title reveal-up">What I studied, and what stuck.</h2>
+    </div>
+
+    <div class="edu-cards edu-cards-single">
+      <div class="glass-card edu-card reveal-up">
+        <div class="edu-year">2026</div>
+        <h3>Computer Science</h3>
+        <p>
+          My academic path started with Matriculation in Computer Science, followed by FSc in
+          Computer Science (ICS), where I built a solid foundation in mathematics and computing
+          fundamentals. I'm currently continuing that path at Abbottabad University of Science &amp;
+          Technology (AUST), pursuing a degree in Computer Science, having successfully completed
+          2 semesters so far.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="work">
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">03 / Experience</p>
+      <h2 class="section-title reveal-up">Where the work actually happened.</h2>
+    </div>
+
+    <div class="exp-list">
+
+      <article class="exp-card glass-card reveal-up">
+        <div class="exp-top">
+          <div>
+            <h3>DIT Instructor</h3>
+            <p class="exp-org">COLER Academy</p>
+          </div>
+          <span class="exp-date">Oct 2024 — Oct 2025</span>
+        </div>
+        <p class="exp-desc">
+          Delivered Diploma in Information Technology courses, guiding students through computer
+          fundamentals and software applications while sharpening my own classroom management and
+          communication along the way.
+        </p>
+        <div class="exp-tags"><span>Teaching</span><span>Curriculum</span><span>IT Fundamentals</span></div>
+      </article>
+
+      <article class="exp-card glass-card reveal-up">
+        <div class="exp-top">
+          <div>
+            <h3>Computer &amp; Subject Instructor</h3>
+            <p class="exp-org">Khyber Academy</p>
+          </div>
+          <span class="exp-date">~3–4 Months</span>
+        </div>
+        <p class="exp-desc">
+          Taught academic subjects alongside computer-related topics, leaning on practical exercises
+          to help students build real understanding rather than memorized answers.
+        </p>
+        <div class="exp-tags"><span>Teaching</span><span>Mentorship</span></div>
+      </article>
+
+      <article class="exp-card glass-card reveal-up">
+        <div class="exp-top">
+          <div>
+            <h3>Remote Graphic Designer</h3>
+            <p class="exp-org">Freelance</p>
+          </div>
+          <span class="exp-date">1 Year</span>
+        </div>
+        <p class="exp-desc">
+          Designed social media posts, promotional graphics, marketing materials, business cards,
+          posters, and branding assets for a rotating slate of clients — remotely, on tight timelines.
+        </p>
+        <div class="exp-tags"><span>Branding</span><span>Social Design</span><span>Print</span></div>
+      </article>
+
+      <article class="exp-card glass-card reveal-up">
+        <div class="exp-top">
+          <div>
+            <h3>Creative Designer &amp; Content Writer</h3>
+            <p class="exp-org">Zohiab Digital Universe</p>
+          </div>
+          <span class="exp-date">1 Year</span>
+        </div>
+        <p class="exp-desc">
+          Created content and visual branding materials for digital marketing campaigns, contributing
+          creative direction alongside the copy itself.
+        </p>
+        <div class="exp-tags"><span>Content Writing</span><span>Visual Branding</span><span>Marketing</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">04 / Services</p>
+      <h2 class="section-title reveal-up">How I can help.</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card glass-card reveal-up">
+        <span class="service-index">01</span>
+        <h3>Graphic Design</h3>
+        <ul>
+          <li>Social Media Design</li>
+          <li>Branding</li>
+          <li>Posters</li>
+          <li>Marketing Materials</li>
+        </ul>
+      </div>
+      <div class="service-card glass-card reveal-up">
+        <span class="service-index">02</span>
+        <h3>Logo Animation</h3>
+        <ul>
+          <li>Motion Graphics</li>
+          <li>Animated Branding</li>
+          <li>Intro Animations</li>
+        </ul>
+      </div>
+      <div class="service-card glass-card reveal-up">
+        <span class="service-index">03</span>
+        <h3>Content Writing</h3>
+        <ul>
+          <li>Creative Writing</li>
+          <li>Marketing Copy</li>
+          <li>Digital Content</li>
+        </ul>
+      </div>
+      <div class="service-card glass-card reveal-up">
+        <span class="service-index">04</span>
+        <h3>Teaching &amp; Mentorship</h3>
+        <ul>
+          <li>Computer Education</li>
+          <li>Technology Training</li>
+          <li>Student Guidance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="tools" id="tools">
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">05 / Tools</p>
+      <h2 class="section-title reveal-up">What's on the desk.</h2>
+    </div>
+
+    <div class="tools-grid">
+      <div class="tools-col reveal-up">
+        <h4>Design</h4>
+        <div class="skill-row"><span>Adobe Photoshop</span><div class="skill-track"><div class="skill-fill" data-level="92"></div></div></div>
+        <div class="skill-row"><span>Adobe Illustrator</span><div class="skill-track"><div class="skill-fill" data-level="85"></div></div></div>
+        <div class="skill-row"><span>Canva</span><div class="skill-track"><div class="skill-fill" data-level="95"></div></div></div>
+        <div class="skill-row"><span>CapCut</span><div class="skill-track"><div class="skill-fill" data-level="88"></div></div></div>
+      </div>
+      <div class="tools-col reveal-up">
+        <h4>Development</h4>
+        <div class="skill-row"><span>Web Development</span><div class="skill-track"><div class="skill-fill" data-level="82"></div></div></div>
+        <div class="skill-row"><span>HTML</span><div class="skill-track"><div class="skill-fill" data-level="90"></div></div></div>
+        <div class="skill-row"><span>CSS</span><div class="skill-track"><div class="skill-fill" data-level="85"></div></div></div>
+        <div class="skill-row"><span>JavaScript</span><div class="skill-track"><div class="skill-fill" data-level="75"></div></div></div>
+        <div class="skill-row"><span>C++</span><div class="skill-track"><div class="skill-fill" data-level="70"></div></div></div>
+        <div class="skill-row"><span>Responsive Design</span><div class="skill-track"><div class="skill-fill" data-level="88"></div></div></div>
+      </div>
+      <div class="tools-col reveal-up">
+        <h4>Creative</h4>
+        <div class="floating-tags">
+          <span>Branding</span>
+          <span>Visual Design</span>
+          <span>Content Writing</span>
+          <span>Presentation Design</span>
+          <span>Social Media Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="journey" id="journey">
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">06 / Journey</p>
+      <h2 class="section-title reveal-up">How it all connects.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"><div class="timeline-line-fill" id="timelineFill"></div></div>
+
+      <div class="timeline-item reveal-up">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <h3>Learning Technology</h3>
+          <p>First contact with computers, code, and the idea that digital tools could be a career.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <h3>DIT Studies</h3>
+          <p>Formal grounding in programming fundamentals and software tools.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <h3>Teaching Career</h3>
+          <p>Stepped into the classroom at COLER Academy, then Khyber Academy.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <h3>Graphic Design Career</h3>
+          <p>Took on remote design clients, building a visual practice alongside teaching.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <h3>Content Writing</h3>
+          <p>Added copy and content strategy to the design toolkit.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <h3>Creative Design Projects</h3>
+          <p>Joined Zohiab Digital Universe as Creative Designer &amp; Content Writer.</p>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up">
+        <div class="timeline-node"></div>
+        <div class="timeline-content glass-card">
+          <h3>Continuous Skill Development</h3>
+          <p>Still learning — this site included.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">07 / Feedback</p>
+      <h2 class="section-title reveal-up">What people say after working together.</h2>
+    </div>
+
+    <div class="testi-track">
+      <div class="testi-card glass-card reveal-up">
+        <p class="testi-quote">"Ehtesam explains technical topics in a way that actually sticks. Our students went from confused to confident in a few sessions."</p>
+        <div class="testi-person">
+          <div class="testi-avatar">SA</div>
+          <div>
+            <p class="testi-name">Program Coordinator</p>
+            <p class="testi-role">COLER Academy</p>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card glass-card reveal-up">
+        <p class="testi-quote">"Fast turnaround, clean design, and he actually listens to feedback instead of just nodding along."</p>
+        <div class="testi-person">
+          <div class="testi-avatar">RM</div>
+          <div>
+            <p class="testi-name">Marketing Lead</p>
+            <p class="testi-role">Remote Client</p>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card glass-card reveal-up">
+        <p class="testi-quote">"The content and visuals he produced for our campaigns consistently outperformed what we had before."</p>
+        <div class="testi-person">
+          <div class="testi-avatar">ZD</div>
+          <div>
+            <p class="testi-name">Creative Director</p>
+            <p class="testi-role">Zohiab Digital Universe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <p class="section-eyebrow reveal-up">08 / Contact</p>
+      <h2 class="section-title reveal-up">Have a project or a class to teach? Let's talk.</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-up">
+        <a href="mailto:gulehtesam@gmail.com" class="contact-link">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">gulehtesam@gmail.com</span>
+        </a>
+        <a href="https://wa.me/923295720923" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">WhatsApp</span>
+          <span class="contact-value">+92 329 5720923</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ehtesam-awan-877729392/" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">ehtesamawan</span>
+        </a>
+        <a href="https://instagram.com/e._.designs0" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-label">Instagram</span>
+          <span class="contact-value">@ehtesamdesigns</span>
+        </a>
+      </div>
+
+      <form class="contact-form glass-card reveal-up" id="contactForm">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">
+          <span id="submitLabel">Send Message</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <a href="#top" class="footer-mark">Ehtesam Awan</a>
+    <p>Creative Designer, Educator &amp; Digital Problem Solver — based in Pakistan, working with people everywhere.</p>
+  </div>
+  <div class="footer-links">
+    <a href="gulehtesam@gmail.com">Email</a>
+    <a href="https://wa.me/923295720923" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://www.linkedin.com/in/ehtesam-awan-877729392/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://instagram.com/e._.designs0" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Ehtesam Awan. All rights reserved.</span>
+    <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
